@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap);
+
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+    --text-white-color: #ffffff;
+    --bg-black-bside: #131416;
+    --bg-black-aside: #1c1d24;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.dark {
+    --bg-black-900: #131416;
+    --bg-black-100: #1c1d24;
+    --bg-black-50: #393939;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+    --text-white-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Nunito", monospac;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.pad-15 {
+    padding: 0 15px;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    background: var(--skin-color);
+    border: 1px solid var(--text-black-900);
+    white-space: nowrap;
+    display: inline-block;
+    white-space: nowrap;
+    text-transform: uppercase;
+    transition: color 0.4s linear;
+    position: relative;
+    color: var(--text-black-900);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: var(--bg-black-900);
+    left: -40px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transition: width 1s;
+    transform: skewX(35deg);
+}
+
+.btn:hover::before {
+    width: 150%;
+}
+
+.btn:hover {
+    color: var(--text-black-900);
+}
+
+/* .btn:hover{
+    transform: scale(1.05); */
+/* hover vào phóng to ra 1.05 */
+/* }
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    background: var(--skin-color);
+    color: white;
+    border-radius: 40px;
+    border: none;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all o.3s ease;
+} */
+.shadow-dark {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}

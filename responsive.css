@@ -1,0 +1,71 @@
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .aside {
+        left: -300px;
+    }
+
+    .main-content {
+        padding-left: 0;
+    }
+
+    .toggler {
+        left: 0;
+        display: block;
+    }
+}
+
+/* phone */
+
+@media (max-width: 739px) {
+    .aside {
+        left: -300px;
+        width: 250px;
+    }
+
+    .main-content {
+        padding-left: 0;
+    }
+
+    .home-img {
+        margin-top: 50px;
+    }
+
+    .buttons .btn {
+        width: 150px;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    .toggler {
+        left: 0;
+        display: block;
+    }
+
+    .toggler i {
+        padding: 20px 20px;
+    }
+
+    .toggler.open {
+        left: 240px;
+    }
+
+    h3.hello {
+        font-size: 40px;
+    }
+
+    h3.hello span {
+        font-size: 40px;
+    }
+
+    h3.my-profession {
+        font-size: 40px;
+    }
+
+    .home-info p {
+        font-size: 20px;
+    }
+
+    ..section-title h2 {
+        font-size: 40px;
+    }
+}
